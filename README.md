@@ -2,6 +2,7 @@
 
 The code in the notebook defines a surrogate model (a simplified, fast model) for financial option pricing. 
 It specifically uses a Neural Network to mimic a slower, traditional mathematical model called a Binomial Tree.
+
 Here is a breakdown of what the code is doing step-by-step:
 1. Creating the "Ground Truth" (Binomial Tree)The function binomial_tree_american_option represents
    a high-fidelity model that calculates the price of an American Put Option.
