@@ -4,10 +4,7 @@ The code in the notebook defines a surrogate model (a simplified, fast model) fo
 It specifically uses a Neural Network to mimic a slower, traditional mathematical model called a Binomial Tree.
 
 Here is a breakdown of what the code is doing step-by-step:
-1. Creating the "Ground Truth" (Binomial Tree)The function binomial_tree_american_option represents
-   a high-fidelity model that calculates the price of an American Put Option.
- It uses backward induction through a price tree to determine the option's value today, accounting for the possibility of early exercise.
- This is the "correct" but computationally expensive way to price these options.
+1. Creating the "Ground Truth" (Binomial Tree). The function binomial_tree_american_option represents a high-fidelity model that calculates the price of an American Put Option. It uses backward induction through a price tree to determine the option's value today, accounting for the possibility of early exercise. This is the "correct" but computationally expensive way to price these options.
 
 2. Generating a Training DatasetThe generate_dataset function creates 1,000 random market scenarios.
    It varies four key inputs:
