@@ -1,3 +1,5 @@
+### A surrogate model (a simplified, fast model) for financial option pricing
+
 The code in the notebook defines a surrogate model (a simplified, fast model) for financial option pricing. 
 It specifically uses a Neural Network to mimic a slower, traditional mathematical model called a Binomial Tree.
 Here is a breakdown of what the code is doing step-by-step:
