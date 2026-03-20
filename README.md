@@ -1,9 +1,13 @@
 ### A surrogate model (a simplified, fast model) for financial option pricing
 
-The code in the notebook defines a surrogate model (a simplified, fast model) for financial option pricing. 
-It specifically uses a Neural Network to mimic a slower, traditional mathematical model called a Binomial Tree.
+The logic behind using neural networks to price American options is a well-established concept in academic and professional quantitative finance. However, the specific implementation in this notebook does address several practical gaps often found in textbook theory versus real-world application, such as: 
+- The "Speed-Accuracy" Gap: Traditional models like the Binomial Tree or Monte Carlo simulations are highly accurate but computationally expensive, making them difficult to use for real-time risk management of large portfolios.
+- Generalization vs. Point Calculation: There is often a disconnect between calculating a single price and understanding how that price moves across a broad "map" of varying market conditions
+- Early Exercise Complexity: The pricing of American options is significantly more complex than European options because they can be exercised at any time. Standard Black-Scholes formulas (common in introductory literature) cannot price American options. While the Binomial Tree can, it becomes "heavier" as the number of steps (N) increases.
 
-Here is a breakdown of what the code is doing step-by-step:
+This approach effectively fills these practical gaps in the literature by providing a scalable solution for real-time risk management and large-scale portfolio valuation, where traditional recursive models are too slow for high-frequency environments.
+
+It specifically uses a Neural Network to mimic a slower, traditional mathematical model called a Binomial Tree. Here is a breakdown of what the code is doing step-by-step:
 1. Creating the "Ground Truth" (Binomial Tree). The function binomial_tree_american_option represents a high-fidelity model that calculates the price of an American Put Option. It uses backward induction through a price tree to determine the option's value today, accounting for the possibility of early exercise. This is the "correct" but computationally expensive way to price these options.
 
 2. Generating a Training DatasetThe generate_dataset function creates 1,000 random market scenarios.
