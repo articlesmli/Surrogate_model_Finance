@@ -1,4 +1,5 @@
-### A surrogate model (a simplified, fast model) for financial option pricing
+### Deep Surrogate Modeling for High-Dimensional American Option Pricing: A Neural Network Approach to Real-Time Risk Management DOI: http://dx.doi.org/10.2139/ssrn.6467662 
+
 
 The logic behind using neural networks to price American options is a well-established concept in academic and professional quantitative finance. However, the specific implementation in this notebook does address several practical gaps often found in textbook theory versus real-world application, such as: 
 - The "Speed-Accuracy" Gap: Traditional models like the Binomial Tree or Monte Carlo simulations are highly accurate but computationally expensive, making them difficult to use for real-time risk management of large portfolios.
