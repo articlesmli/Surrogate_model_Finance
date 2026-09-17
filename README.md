@@ -1,4 +1,5 @@
-### Deep Surrogate Modeling for High-Dimensional American Option Pricing: A Neural Network Approach to Real-Time Risk Management DOI: http://dx.doi.org/10.2139/ssrn.6467662 
+### Deep Surrogate Modeling for High-Dimensional American Option Pricing: A Neural Network Approach to Real-Time Risk Management
+DOI: http://dx.doi.org/10.2139/ssrn.6467662 
 
 
 The logic behind using neural networks to price American options is a well-established concept in academic and professional quantitative finance. However, the specific implementation in this notebook does address several practical gaps often found in textbook theory versus real-world application, such as: 
